@@ -7,7 +7,7 @@
 #include <cstdint>
 
 #define CAPACITY 5000
-
+#define DEBUG
 int main(){
     
     int32_t large = CAPACITY;
