@@ -9,6 +9,23 @@ enum class cow_purpose {dairy, meat, hide, pet};
 
 class cow{
 public:
+    cow(std::string name_i,int age_i, cow_purpose purpose_i){
+        name = name_i;
+        age = age_i;
+        purpose = purpose_i;
+    }
+    std::string get_name() const{
+        return name;
+    }
+    std::string get_age() const{
+        return age;
+    }
+    std::string get_purpose() const{
+        return purpose;
+    }
+
+
+private:
     std::string name;
     int age;
     cow_purpose purpose;
